@@ -4,16 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Mockup using Figma</title>
+    <link rel="stylesheet" href="./assets/css/global.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-    />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
   </head>
   <body>
     <main class="bg-white">
@@ -34,7 +26,7 @@
         <h2 class="text-5xl sm:text-6xl font-medium">
           Responsible <span class="text-nowrap">Use of AI</span>
         </h2>
-        <p class="mt-4 text-[#606062] text-sm sm:text-base">
+        <p class="mt-4 text-[#606062] text-sm sm:text-base font-normal">
           Every time you use an AI application, you're contributing to the
           development and evolution of AI. By making responsible choices and
           advocating for ethical practices, you can influence the direction of
@@ -44,7 +36,7 @@
         </p>
       </section>
       <!-- Video Section -->
-      <section class="bg-[#E5E5E5] py-5 sm:py-20">
+      <section class="bg-[#E5E5E5] pt-5 pb-5 sm:pt-20 sm:pb-10">
         <div class="px-5 max-w-5xl mx-auto my-0">
           <h3 class="text-base sm:text-xl text-[#414144] font-medium">
             1. Introduction: Your role as a responsible
@@ -60,7 +52,7 @@
           </div>
           <div class="flex justify-end">
             <button
-              class="mt-8 bg-[#5C5DC0] font-normal text-base text-white px-6 py-4 rounded-full"
+              class="mt-5 sm:mt-10 bg-[#5C5DC0] hover:bg-[#2f2976] transition-colors duration-300 ease-in-out font-normal text-base text-white px-6 py-4 rounded-full"
             >
               Next lesson
             </button>
@@ -77,41 +69,121 @@
         >
           <li class="py-2 flex justify-between">
             1. Introduction to AI: Building the Foundations of Your Journey
-            <span>✔</span>
+            <img
+              src="./assets/images/checkbox-marked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox marked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             2. Introduction to AI: Building the Foundations of Your Journey
-            <span>✔</span>
+            <img
+              src="./assets/images/checkbox-marked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox marked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             3. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             4. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             5. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             6. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             7. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             8. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
           <li class="py-2 flex justify-between">
             9. Introduction to AI: Building the Foundations of Your Journey
-            <span>○</span>
+            <img
+              src="./assets/images/checkbox-unmarked.svg"
+              width="24"
+              height="24"
+              alt="Checkbox unmarked"
+              aria-hidden="true"
+            />
           </li>
         </ul>
+      </section>
+      <!-- Subscription Section -->
+      <section class="px-5 sm:px-20 pb-5 sm:pb-20 max-w-5xl mx-auto">
+        <div
+          class="flex flex-col sm:flex-row items-center sm:items-start justify-between"
+        >
+          <h3
+            class="text-xl sm:text-2xl lg:text-4xl font-medium text-[#1C1B1F]"
+          >
+            Complete the course<br />and claim
+            <span class="text-nowrap">your badge!</span>
+          </h3>
+          <button
+            class="mt-4 sm:mt-0 bg-[#929293] hover:bg-[#2f2976] transition-colors duration-300 ease-in-out font-normal text-base text-white px-6 py-3 rounded-full"
+          >
+            <img
+              class="inline-block mr-3"
+              src="./assets/images/padlock.svg"
+              width="24"
+              height="24"
+              alt="Padlock"
+              aria-hidden="true"
+            />
+            Claim Badge
+          </button>
+        </div>
       </section>
     </main>
   </body>
