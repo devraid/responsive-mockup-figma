@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="bg-white">
+    <main class="bg-white" role="main">
       <!-- Header -->
       <header class="py-5 sm:py-10 px-5 max-w-5xl mx-auto my-0 text-center">
         <h1
@@ -24,6 +24,14 @@
       <!-- Introduction -->
       <section class="py-5 sm:py-20 px-5 max-w-5xl mx-auto my-0">
         <h2 class="text-5xl sm:text-[64px] font-medium">
+          <img
+            class="mb-5"
+            src="./assets/images/logo.svg"
+            width="50"
+            height="50"
+            alt="Logo"
+            aria-hidden="true"
+          />
           Responsible <span class="text-nowrap inline-block">Use of AI</span>
         </h2>
         <p
@@ -44,13 +52,31 @@
             1. Introduction: Your role as a responsible
             <span class="text-nowrap inline-block">AI user</span>
           </h3>
-          <div class="mt-4 rounded-xl overflow-hidden">
+          <div class="mt-4 rounded-xl overflow-hidden relative">
             <img
               src="./assets/images/video-poster.jpg"
               alt="Video poster placeholder"
               class="w-full object-cover"
               aria-hidden="true"
             />
+            <button
+              class="absolute inset-0 m-auto w-[88px] h-[88px]"
+              aria-label="Play introduction video"
+            >
+              <img
+                src="./assets/images/play-button.svg"
+                width="88"
+                height="88"
+                alt="Play Button"
+                aria-hidden="true"
+              />
+            </button>
+            <p
+              class="absolute bottom-0 left-0 text-white p-5 text-sm sm:text-[24px] leading-[1.2] font-normal"
+            >
+              <span class="block font-medium">Mikey Sharapova</span>Director —
+              Responsible AI Leadership at IBM
+            </p>
           </div>
           <div class="flex justify-end">
             <button
@@ -69,9 +95,10 @@
           Course contents
         </h3>
         <ul
+          role="list"
           class="mt-4 px-5 sm:px-10 lg:px-20 bg-[#D1ECE2] p-4 rounded-xl text-[#414144] text-sm sm:text-[20px]"
         >
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             1. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-marked.svg"
@@ -81,7 +108,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             2. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-marked.svg"
@@ -91,7 +118,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             3. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -101,7 +128,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             4. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -111,7 +138,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             5. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -121,7 +148,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             6. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -131,7 +158,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             7. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -141,7 +168,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             8. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -151,7 +178,7 @@
               aria-hidden="true"
             />
           </li>
-          <li class="py-2 flex justify-between">
+          <li role="listitem" class="py-2 flex justify-between">
             9. Introduction to AI: Building the Foundations of Your Journey
             <img
               src="./assets/images/checkbox-unmarked.svg"
@@ -175,6 +202,7 @@
             <span class="text-nowrap">your badge!</span>
           </h3>
           <button
+            aria-label="Claim your badge"
             class="mt-4 sm:mt-0 bg-[#929293] hover:bg-[#2f2976] transition-colors duration-300 ease-in-out font-normal text-base sm:text-[20px] text-white px-6 py-3 rounded-full self-center"
           >
             <img
@@ -182,7 +210,7 @@
               src="./assets/images/padlock.svg"
               width="24"
               height="24"
-              alt="Padlock"
+              alt="Padlock Icon"
               aria-hidden="true"
             />
             Claim Badge
@@ -190,7 +218,7 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="bg-black text-white py-5 px-5">
+      <footer class="bg-black text-white py-5 px-5" role="contentinfo">
         <div class="flex items-center justify-between flex-col sm:flex-row">
           <!-- Logo -->
           <a
@@ -200,7 +228,7 @@
             LOGO
           </a>
           <!-- Navigation -->
-          <nav>
+          <nav role="navigation">
             <ul
               class="mb-3 sm:mb-0 flex justify-center space-x-3 sm:space-x-10 text-[14.28px] font-normal"
             >
@@ -239,9 +267,17 @@
           </nav>
           <!-- Button -->
           <button
-            class="bg-[#5C5DC0] hover:bg-[#2f2976] transition-colors duration-300 ease-in-out font-normal text-base sm:text-[20px] text-white px-6 py-3 rounded-full"
+            class="border-white border bg-black hover:bg-[#2f2976] transition-colors duration-300 ease-in-out font-normal text-[16px] text-white px-6 py-3 rounded-full self-center"
           >
-            Next lesson
+            <img
+              class="inline-block mr-3"
+              src="./assets/images/world.svg"
+              width="20"
+              height="20"
+              alt="World Icon"
+              aria-hidden="true"
+            />
+            English
           </button>
         </div>
         <!-- Address -->
